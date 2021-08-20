@@ -1,0 +1,267 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background-color: white;
+  margin: 80px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_side {
+  margin-top: 0px;
+  position: relative;
+  background-color: #003147;
+  padding: 50px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile .imgbx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile .imgbx img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile h2 {
+  color: #fff;
+  font-size: 1.3em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+.profile h2 span {
+  font-size: 0.8em;
+  font-weight: 100px;
+}
+
+.contact {
+  padding-top: 60px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact ul {
+  position: relative;
+}
+
+.contact ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contact ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contact ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact.education li {
+  margin-bottom: 15px;
+}
+
+.contact.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.contact.education h4 {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact.language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #ffffff;
+  display: block;
+  margin-top: 5px;
+}
+.contact.language .percent div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.container .right_side {
+  position: relative;
+  background-color: rgb(255, 254, 254);
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 60px;
+}
+
+.about:last-child {
+  margin-bottom: 0px;
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.title3 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #333;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year_company {
+  min-width: 150px;
+}
+
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+.interest .imgbx1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  bottom: 300px;
+  left: 550px;
+  border-radius: 50%;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.interest .imgbx1 img {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.interest .zu {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  bottom: 255px;
+  left: 485px;
+  font-size: 40px;
+}
+
+.interest .zu p {
+  color: #003147;
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
